@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/AnepsaTools/CreateQRImagesFromCSV#readme",
   "dependencies": {
-    "qrcode": "^1.5.1"
+    "csv-parser": "^3.0.0",
+    "qrcode": "^1.5.1",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
   }
 }
