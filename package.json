@@ -1,0 +1,25 @@
+{
+  "name": "createqrimagesfromcsv",
+  "version": "1.0.0",
+  "description": "Create QR Codes from CSV or XLS FIle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnepsaTools/CreateQRImagesFromCSV.git"
+  },
+  "keywords": [
+    "QR"
+  ],
+  "author": "Erick Servin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnepsaTools/CreateQRImagesFromCSV/issues"
+  },
+  "homepage": "https://github.com/AnepsaTools/CreateQRImagesFromCSV#readme",
+  "dependencies": {
+    "qrcode": "^1.5.1"
+  }
+}
