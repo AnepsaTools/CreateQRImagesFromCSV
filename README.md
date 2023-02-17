@@ -1,7 +1,7 @@
 # CreateQRImagesFromCSV
 
 ###
-This project takes a CSV file and create a QR Image from the contents on the cell QR and
+This project takes a CSV file and create a QR Image from the contents on the cell QR
 
 ## Run with 
 
