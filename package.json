@@ -1,6 +1,6 @@
 {
   "name": "createqrimagesfromcsv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create QR Codes from CSV or XLS FIle",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/AnepsaTools/CreateQRImagesFromCSV#readme",
   "dependencies": {
     "csv-parser": "^3.0.0",
+    "path": "^0.12.7",
     "qrcode": "^1.5.1",
     "uuid": "^9.0.0",
     "uuidv4": "^6.2.13"
