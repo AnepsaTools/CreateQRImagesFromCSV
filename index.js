@@ -18,10 +18,13 @@ var files = fs.readdirSync('./');
 console.log(files);
 
 if(files.filter(file => file.includes('.csv'))){
-  console.log('found');
+  console.log('File found');
   const foundFile = files.filter(file => file.includes('.csv'));
   console.log(foundFile);
   const fileName = foundFile.toString();
+  const splitFileName = fileName.split('.');
+  const folderName = splitFileName[0];
+  const folder = folderName.toString();
 
 const results = [];
 fs.createReadStream(fileName)
@@ -31,13 +34,13 @@ fs.createReadStream(fileName)
     results.forEach((element) => {
       const qrCodeText = element.QR;
       const ID = element.ID2;
-      const filepath = "./GeneratedCodes/" + fileName + "/" + ID + ".png";
+      const filepath = "./GeneratedCodes/" + folder + "/" + ID + ".png";
       const file = fs.createWriteStream(filepath);
       const code = QRCode.toFileStream(file, qrCodeText, opts);
       code;
     });
-    const folderName = fileName;
-    const folderPath = "./GeneratedCodes/" + folderName + "/";
+    const folderName = folder;
+    const folderPath = "./GeneratedCodes/" + folder + "/";
     if (!fs.existsSync(folderPath)) {
       fs.mkdirSync(folderPath);
     } else {
@@ -46,5 +49,5 @@ fs.createReadStream(fileName)
   });
 
 } else {
-  console.log('not found');
+  console.log('File not found');
 }

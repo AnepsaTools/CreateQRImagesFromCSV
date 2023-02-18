@@ -1,6 +1,6 @@
 {
   "name": "createqrimagesfromcsv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create QR Codes from CSV or XLS FIle",
   "main": "index.js",
   "scripts": {
